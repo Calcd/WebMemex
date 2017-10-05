@@ -22,8 +22,8 @@ class DateRangeSelection extends Component {
     }
 
     componentDidMount() {
-        this.startDateDatePicker.refs.input.refs.input.addEventListener('keydown', e => this.handleKeydown(e, 'startDate'))
-        this.endDateDatePicker.refs.input.refs.input.addEventListener('keydown', e => this.handleKeydown(e, 'endDate'))
+        this.startDateDatePicker.input.addEventListener('keydown', e => this.handleKeydown(e, 'startDate'))
+        this.endDateDatePicker.input.addEventListener('keydown', e => this.handleKeydown(e, 'endDate'))
     }
 
     handleKeydown(event, type) {
